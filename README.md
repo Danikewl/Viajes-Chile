@@ -12,3 +12,6 @@ Elementos JS Boostrap utilizados:
 - cards
 - Popover
 - modal
+- smoothscroll
+
+link Github: https://github.com/Danikewl/Viajes-Chile
