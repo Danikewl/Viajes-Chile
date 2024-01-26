@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Estilos Custom-->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!--CDN FontAwesome-->
+    <script defer src="https://kit.fontawesome.com/643c1c6cfd.js" crossorigin="anonymous"></script>
+    <!--CDN Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--CDN Jquery-->
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
-    <script src="./assets/js/index.js"></script>
+    <!--JS Custom-->
+    <script defer src="./assets/js/index.js"></script>
     <title>Chile-Viajes</title>
 </head>
 <body>
-    <header>
+    <header class="fixed-top shadow">
         <div class="container">
-            <nav class="navbar navbar-expand-lg sticky" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
-                    <div class=" d-flex gap-1 align-items-center p-0 m-0">
+                    <div class=" d-flex gap-3 align-items-center p-0 m-0">
                         <a class="navbar-brand p-0 m-0" href="#">
                             <img src="./assets/img/viajes.svg" alt="logo-viajes" class="p-0 m-0">
                         </a>
@@ -39,7 +45,113 @@
             </nav>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!--Hero sectionCarousel-->
+        <section class="hero-section">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="moais">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="pinguino">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        <!--Section 2 - cards-->
+        <section class="aboutUs d-none d-md-block">
+            <div class="container">
+                <h1 class="text-center pb-5">¿Quiénes Somos?</h1>
+                <div class="row">
+                    <div class="col-12 col-md-4 pb-5">
+                        <div>
+                            <div class="icono d-flex justify-content-center">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pb-5">
+                        <div>
+                            <div class="icono d-flex justify-content-center  d-block d-md-none">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum
+                            </p>
+                            <div class="icono d-flex justify-content-center">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 pb-5">
+                        <div>
+                            <div class="icono d-flex justify-content-center">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section3 destacados-->
+        <section class="destacados">
+            <h2 class="text-center pb-5">Destacados</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 pb-4">
+                        <div class="card">
+                            <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 pb-4">
+                        <div class="card">
+                            <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 pb-4">
+                        <div class="card">
+                            <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 pb-4">
+                        <div class="card">
+                            <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>

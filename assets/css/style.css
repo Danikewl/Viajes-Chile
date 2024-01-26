@@ -1,25 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos Generales */
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
 }
 
 /* Estilos del nav*/
 
-.sticky {
+header {
+    background-color: transparent;
+    backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
-}
-
-header {
-    backdrop-filter: blur(8px);
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 nav img {
     height: 2rem;
-}
+}   
 
-nav a,
+nav .nav-link,
 p {
     color: white;
     font-size: 1rem;
+}
+
+/*Estilos del carousel*/
+
+/*Estilos Section2 aboutUs*/
+
+.aboutUs {
+    background-color: #191919;
+    color: white;
+    padding: 70px 0 70px 0;
+}
+
+.aboutUs .icono {
+    background-color: #39BDDE;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.aboutUs h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/*Estilos Section3 Destacados*/
+
+.destacados {
+    background:#191919;
+    color: white;
+    padding: 70px 0 70px 0;
+}
+
+.destacados .card {
+    --bs-card-border-width: none;
+}
+
+.card-body {
+    background-color: #39BDDE;
+    border-bottom: 10px;
+}
+
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.destacados h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+
 }
