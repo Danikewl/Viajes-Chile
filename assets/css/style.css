@@ -127,6 +127,10 @@ footer i {
     font-size: 1.7rem;
 }
 
+footer a {
+    color: white;
+}
+
 /*Estilos modal*/
 .modal {
     color: #191919;
