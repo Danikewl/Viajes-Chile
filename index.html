@@ -35,10 +35,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                            <a class="nav-link" href="#">Quiénes Somos</a>
-                            <a class="nav-link" href="#">Destacados</a>
-                            <a class="nav-link" href="#">Contactos</a>
+                            <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                            <a class="nav-link" href="#aboutus">Quiénes Somos</a>
+                            <a class="nav-link" href="#destaca">Destacados</a>
+                            <a class="nav-link" href="#contact">Contactos</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
     </header>
     <main>
         <!--Hero sectionCarousel-->
-        <section class="hero-section">
+        <section id="inicio" class="hero-section">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -71,13 +71,13 @@
             </div>
 
         <!--Section 2 - cards-->
-        <section class="aboutUs d-none d-md-block">
+        <section id="aboutus" class="aboutUs d-none d-md-block">
             <div class="container">
                 <h1 class="text-center pb-5">¿Quiénes Somos?</h1>
                 <div class="row">
                     <div class="col-12 col-md-4 pb-5">
                         <div>
-                            <div class="icono d-flex justify-content-center">
+                            <div class="icono d-flex justify-content-center" data-bs-toggle="popover" data-bs-title="Vuelos" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?">
                                 <i class="fa-solid fa-plane"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
@@ -93,14 +93,14 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum
                             </p>
-                            <div class="icono d-flex justify-content-center">
+                            <div class="icono d-flex justify-content-center" data-bs-toggle="popover" data-bs-title="Trecking" data-bs-placement="bottom" data-bs-content="And here's some amazing content. It's very engaging. Right?">
                                 <i class="fa-solid fa-triangle-exclamation"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 pb-5">
                         <div>
-                            <div class="icono d-flex justify-content-center">
+                            <div class="icono d-flex justify-content-center" data-bs-toggle="popover" data-bs-title="Trayectos" data-bs-placement="top" data-bs-content="And here's some amazing content. It's very engaging. Right?">
                                 <i class="fa-solid fa-route"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur consequatur, eligendi quis dolor provident quisquam nobis reiciendis iure alias facere aliquid sunt, doloribus ea nostrum earum recusandae perspiciatis. Tempore, laborum.
@@ -112,7 +112,7 @@
             </div>
         </section>
         <!--Section3 destacados-->
-        <section class="destacados">
+        <section id="destaca" class="destacados">
             <h2 class="text-center pb-5">Destacados</h2>
             <div class="container">
                 <div class="row">
@@ -152,7 +152,7 @@
             </div>
         </section>
         <!--Section4 Contacto-->
-        <section class="contacto">
+        <section id="contact" class="contacto">
             <div class="container">
                 <h2 class="text-center pb-4">Contacto</h2>
                     <div class="mb-3">
@@ -168,7 +168,20 @@
                         <textarea class="form-control" placeholder="Escribe tu mensaje" id="floatingTextarea"></textarea>
                     </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn">Enviar</button>
+                        <button type="submit" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Mensaje Enviado</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -177,7 +190,7 @@
     <footer>
         <div class="container d-flex justify-content-between align-items-center">
             <h5>VIAJES CHILE</h5>
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-3">
                 <i class="fa-brands fa-github"></i>
                 <i class="fa-brands fa-linkedin"></i>
                 <i class="fa-brands fa-twitter"></i>
