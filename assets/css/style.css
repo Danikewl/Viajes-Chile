@@ -63,7 +63,7 @@ p {
 .destacados {
     background:#191919;
     color: white;
-    padding: 70px 0 70px 0;
+    padding: 30px 0 70px 0;
 }
 
 .destacados .card {
@@ -84,5 +84,36 @@ p {
     font-weight: 700;
     color: white;
     font-size: 2rem;
+}
 
+/*Estilos seccion4 Contacto*/
+
+.contacto {
+    background:#191919;
+    color: white;
+    padding: 30px 0 70px 0;
+}
+
+.contacto h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 2rem;
+}
+
+.contacto .btn {
+    background-color:#39BDDE ;
+    color: white;
+    padding: 8px 24px 8px 24px;
+}
+
+/*Estilos Footer*/
+
+footer {
+    background:#39BDDE;
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+footer i {
+    font-size: 1.7rem;
 }
